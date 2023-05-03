@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top" [ngStyle]="navbg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">AngularFlix</a>
+    <a class="navbar-brand" routerLink="">AngularFlix</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,14 +15,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" routerLink="search">Features</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- <router-outled></router-outled> -->
+<!-- Para renderizar as outras páginas -->
+<router-outlet></router-outlet>
