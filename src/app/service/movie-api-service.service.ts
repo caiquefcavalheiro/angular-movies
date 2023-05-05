@@ -15,4 +15,10 @@ export class MovieApiServiceService {
   bannerApiData(): Observable<any> {
     return this.http.get(this.bannerapi);
   }
+
+  tredingMovieApiData(): Observable<any> {
+    return this.http.get(
+      `${this.baseUrl}/trending/movie/day?api_key=${this.apiKey}`
+    );
+  }
 }
