@@ -11,13 +11,14 @@ export class SearchComponent implements OnInit {
   constructor(private service: MovieApiServiceService) {}
   ngOnInit(): void {}
 
+  searchResult: any;
   searchForm = new FormGroup({
     movieName: new FormControl(null),
   });
 
   submitForm() {
     this.service.getSearchMovie(this.searchForm.value).subscribe((result) => {
-      console.log(result, 'SearchMovie#');
+      this.searchResult = result.results;
     });
   }
 }
