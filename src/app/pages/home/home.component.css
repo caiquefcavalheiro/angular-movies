@@ -29,8 +29,17 @@
   width: 100%;
   box-sizing: content-box;
   transition: transform 450ms;
+  margin-right: 7px;
 }
 
 .rowimg:hover {
   transform: scale(1.08);
+}
+
+.largerposter {
+  max-height: 600px;
+}
+
+.rowposter::-webkit-scrollbar {
+  display: none;
 }
