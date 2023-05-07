@@ -41,5 +41,9 @@
 }
 
 .rowposter::-webkit-scrollbar {
-  width: 0;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e50914;
 }
